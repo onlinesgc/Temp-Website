@@ -229,3 +229,27 @@ hr {
 	font-family: "Sansumu";
 	text-align: center;
 }
+
+.input {
+	background-color: var(--gray-gradient);
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	padding: 1em;
+	margin: 20px;
+	width: 100%;
+}
+.input-button{
+	background-color: var(--gray-gradient);
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	padding: 1em;
+	margin: 20px;
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+}

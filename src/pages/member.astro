@@ -1,0 +1,63 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <h3 class="head">Skriv in ett Discord id</h3>
+            <div>
+                <div class="center">
+                    <input class="input" type="text" id="id" name="id" placeholder="Discord id"></input>
+                    <input class="input" type="text" id="username" name="username" placeholder="username (Kan va vad som)"></input>
+                    <button class="input-button" id="submit" name="submit">Skicka</button>
+                    <img id="generated" src="" />
+                </div>
+                <script type="module">
+                    document.getElementById('submit').onclick = async function() {
+                        const user = await fetch("https://api.sgc.se/public_api/user/" + document.getElementById('id').value);
+                        const data = await user.json();
+                        if (data.error) {
+                            alert("Användaren finns inte");
+                            return;
+                        }
+                        let xpPercentage = Math.round(
+                            (data.xp / data.level ** 2) * 100,
+                        );
+
+                        // Progressbar is constant after lvl 31
+                        if (data.level > 31) {
+                            xpPercentage = Math.round((data.xp / 961) * 100);
+                        }
+                        const frame = await fetch("https://api.sgc.se/public_api/frame/generate", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                "userid": document.getElementById('id').value,
+                                "username": document.getElementById('username').value,
+                                "frame_id": data.profileFrame,
+                                "hex_color": data.colorHexCode	,
+                                "level": data.level,
+                                "xp_percentage": xpPercentage,
+                                "force":true,
+                            })
+                        })
+                        const url = URL.createObjectURL(await frame.blob());
+                        document.getElementById('generated').src = url;
+                    } 
+                </script>
+            </div>
+            </main>                
+		<Footer />
+	</body>
+</html>
