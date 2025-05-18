@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <h1 class="head">För föräldrar</h1>
+            <h3 class="head">En fritidsgård online</h3>
+            <p>
+                SGC är en ungdomsförening som drivs av unga, för unga. Vi fungerar på samma sätt som det lokala fotbollslaget eller den lokala musikkåren, fast vår verksamhet sker online. På det digitala forumet Discord har vi en egen server - en grupp där våra medlemmar kan umgås gemensamt. Där anordnar vi regelbundna aktiviteter, driver egna spelservrar och har kul tillsammans. Vi har en bred målgrupp, där folk med många olika intressen samlas. Gaming, böcker, filmer, sport, och mycket mer. Man skulle kunna beskriva oss som en fritidsgård, fast på nätet! <br><br>
+            </p>
+            <h3 class="head">En säker plats på internet</h3>
+            <p>SGC grundades med målet att skapa en trygg plats på nätet där unga kan umgås och utvecklas tillsammans. I en tid då många, särskilt föräldrar, är oroliga över vad som egentligen sker på nätet vill vi vara en trygg punkt för våra medlemmar. Vi jobbar aktivt med moderering och konflikthantering för att säkerställa att detta mål uppfylls. Föreningen och Discord-servern drivs av ett gäng ungdomar, där många har tidigare erfarenhet inom föreningsliv och att arbeta med unga. Vi samarbetar med likasinnade organisationer, som exempelvis Killar.se och Rädda barnen för att säkerställa att vi är den trygga och säkra plats som vi vill vara. </p>
+            <img src="./public/omoss2.png" alt="Tre glada ungdomar i ett gamingrum med grön LED-belysning framför en datorskärm">
+		</main>
+		<Footer />
+	</body>
+</html>
