@@ -18,20 +18,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<img src="/Trusted.png" alt="Minecraft-bild på en stad med trähus i djungellandskap">
 				<h3>TRUSTED</h3>
 				<p><b>Ip: </b>trusted.sgc.se</p>
+				<p id="players-trusted"></p>
 				<a href="/blog/trusted">Mer info</a>
 			</div>
 			<div class="server">
 				<img src="/Creative.webp" alt="Minecraft-bild på 3D pixelart där en figur med svärd möter ett stort skelett">
 				<h3>CREATIVE</h3>
 				<p><b>Ip: </b>creative.sgc.se</p>
+				<p id="players-creative"></p>
 				<a href="/blog/creative">Mer info</a>
 			</div>
 			<div class="server">
 				<img src="/Parkour.webp" alt="Minecraft-bild på lobbyarea med ett monument och ett slott i skogslandskap">
 				<h3>PARKOUR</h3>
 				<p><b>Ip: </b>parkour.sgc.se</p>
+				<p id="players-parkour"></p>
 				<a href="/blog/parkour">Mer info</a>
 			</div>
+			<script type="module">
+				const trusted = await fetch("https://api.mcsrvstat.us/3/trusted.sgc.se");
+				const creative = await fetch("https://api.mcsrvstat.us/3/creative.sgc.se");
+				const parkour = await fetch("https://api.mcsrvstat.us/3/parkour.sgc.se");
+				const trustedData = await trusted.json();
+				const creativeData = await creative.json();
+				const parkourData = await parkour.json();
+				document.getElementById('players-trusted').innerHTML = "<b>Online: </b>" + trustedData.players.online + "/" + trustedData.players.max;
+				document.getElementById('players-creative').innerHTML = "<b>Online: </b>" + creativeData.players.online + "/" + creativeData.players.max;
+				document.getElementById('players-parkour').innerHTML = "<b>Online: </b>" + parkourData.players.online + "/" + parkourData.players.max;
+			</script>
 		</main>
 		<Footer />
 	</body>
