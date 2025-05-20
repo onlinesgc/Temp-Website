@@ -10,7 +10,7 @@ Parkourservern är en äventyrs- och spelserver som man får tillgång till om m
 
 Parkourservern drivs av SGC i ett samarbete med Stamsite. SGC sköter underhåll, moderering och anordnar även turneringar och tävlingar på servern.
 
-Kom och klättra genom fängelsehålorna i de 30st unika parkour-banorna som upprör värld 1. Ta dig senare vidare till Villorna där 20st ytterligare rum väntar dig. Utmana dig själv eller dina kompisar genom Turneringssystemet. Varje fredag blir det Parkourrace där vi tävlar tillsammans.
+Kom och klättra genom fängelsehålorna i de 30st unika parkour-banorna som utgör värld 1. Ta dig senare vidare till Villorna där 20st ytterligare rum väntar dig. Utmana dig själv eller dina kompisar genom Turneringssystemet. Varje fredag blir det Parkourrace där vi tävlar tillsammans.
 
 **IP**: parkour.sgc.se\
 **WHITELIST**: Bli medlem i SGC:s förening, helt gratis!
