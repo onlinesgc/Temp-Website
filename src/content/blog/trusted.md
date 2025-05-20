@@ -12,3 +12,10 @@ Minecraftservern bygger på tillit och gemenskap. Vi har inget plotsystem utan v
 
 **IP**: trusted.sgc.se\
 **WHITELIST**: Bli level 20 i SGC:s discord.
+
+- ❤️ <a href="/blog/asufaruto">Info om Asufaruto</a> 
+- 💚 <a href="/blog/birchester">Info om Birchester</a> 
+- 💙 <a href="/blog/viktorianska">Info om Viktorianska Imperiet</a> 
+- 🗺️ <a href="https://map.sgc.se">Länk till Trusteds Världskarta</a> 
+- 📊 <a href="https://stats.90gq.se/t">Länk till Trusteds Statistik</a>
+- 📚 <a href="https://trusted.fandom.com/sv">Länk till Trusted Wikin</a>
