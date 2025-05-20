@@ -8,5 +8,5 @@ import icon from 'astro-icon';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://sgc.se',
-    integrations: [mdx(), sitemap(), icon()],
+    integrations: [mdx(), sitemap(), icon()]
 });
