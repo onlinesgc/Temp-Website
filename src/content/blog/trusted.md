@@ -19,3 +19,5 @@ Minecraftservern bygger på tillit och gemenskap. Vi har inget plotsystem utan v
 - 🗺️ <a href="https://map.sgc.se">Länk till Trusteds Världskarta</a> 
 - 📊 <a href="https://stats.90gq.se/t">Länk till Trusteds Statistik</a>
 - 📚 <a href="https://trusted.fandom.com/sv">Länk till Trusted Wikin</a>
+
+Onlineföreningen SGC har våra servrar hos <a href="https://www.lysator.liu.se/inhysningar/">Datorföreningen LYSATOR</a> som ideellt tillhandahåller IT-resurser till oss och andra ideella föreningar.
