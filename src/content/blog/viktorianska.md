@@ -1,9 +1,9 @@
 ---
 title: 'Viktorianska Imperiet'
-description: 'Creative är våran kreativa minecraftserver!'
+description: 'Trusted är vår survival vanilla minecraftserver!'
 pubDate: 'Jan 01 2025'
 heroImage: '/viktorianska.webp'
-altImageText: "Magiskt och dekorativt Minecraft-landskap"
+altImageText: "Minecraft-stad"
 ---
 
 **Namn på landet:**<br>
