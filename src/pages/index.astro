@@ -46,7 +46,46 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				2024 samlade vi in 11.000kr, och nu är det dags igen! Pytsa för att få oss att göra utmaningar för er underhållning, 
 				eller för att låsa upp någon gåva på vår discord.
 			</p>
+			<div class="donation-progress">
+                <h3>Musikhjälpen 2025 - Insamlingsmål</h3>
+                <div class="progress-info">
+                    <span id="current-amount">Laddar...</span>
+                    <span id="goal-amount">Mål: 15.000kr</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-percentage" id="progress-percentage">0%</div>
+                </div>
+            </div>
 		</main>
 		<Footer />
+		<script type="module">
+            async function updateProgressBar() {
+                try {
+                    const response = await fetch('https://musikapi.lukasabbe.com/api/collection/sgc-musikhjaelpen');
+                    const data = await response.json();
+
+                    const currentAmount = data.amount || 0;
+                    const goalAmount = data.goal || 15000;
+                    
+                    const percentage = Math.min((currentAmount / goalAmount) * 100, 100);
+                    
+                    document.getElementById('current-amount').textContent = `${currentAmount.toLocaleString('sv-SE')}kr`;
+                    document.getElementById('goal-amount').textContent = `Mål: ${goalAmount.toLocaleString('sv-SE')}kr`;
+                    document.getElementById('progress-fill').style.width = `${percentage}%`;
+                    document.getElementById('progress-percentage').textContent = `${Math.round(percentage)}%`;
+                    
+                } catch (error) {
+                    console.error('Kunde inte ladda progress data:', error);
+                    document.getElementById('current-amount').textContent = 'Kunde inte ladda data';
+                }
+            }
+            
+            updateProgressBar();
+            
+            setInterval(updateProgressBar, 5 * 60 * 1000);
+        </script>
 	</body>
 </html>
