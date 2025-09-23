@@ -7,7 +7,7 @@ altImageText: "Minecraft-stad"
 ---
 ## Årsmötesprotokoll
 - <a href="/download/årsmöte-2025.pdf">Årsmötesprotokoll 2025</a>
-- <a href="/src/download/årsmöte-2024.pdf">Årsmötesprotokoll 2024</a>
+- <a href="/download/årsmöte-2024.pdf">Årsmötesprotokoll 2024</a>
 - <a href="/download/årsmöte-2023.pdf">Årsmötesprotokoll 2023</a>
 - <a href="/download/uppstartsmöte-2022.pdf">Uppstartsmöte 2022</a>
 ---
