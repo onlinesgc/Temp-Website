@@ -1,0 +1,24 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <h1 class="head">GameJam 2025</h1>
+            <p>Tävla i spelskapande! Skapa en interaktiv upplevelse, själv eller i lag, och vinn!
+				<br><br>SGC ska hålla ett gamejam i år igen! Det kommer hållas under höstlovet (V44). Man vinner 50 euro på valfri spelplattform såsom steam eller xbox! Temat revealas när allt startar! Vi hoppas att ni vill vara med!
+				<br><br>Mer info kommer senare! Gå med i vår <a href="https://discord.sgc.se">discord</a> om du har frågor!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
