@@ -1,7 +1,7 @@
 ---
 title: 'Trusted'
 description: 'Trusted är vår survival vanilla minecraftserver!'
-pubDate: 'Jan 01 2025'
+pubDate: 'Mar 19 2021'
 heroImage: '/Trusted2.png'
 altImageText: "Minecraft-bild med ett slott och torn i bakgrunden"
 ---
