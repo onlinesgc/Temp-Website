@@ -157,11 +157,13 @@ För att sitta med i Mod-laget behöver personen också vara medlem i föreninge
 För att avskeda en person från ett staff-lag behöver det endast godkännas av Mod-laget.
 En majoritet av ledamöterna i föreningsstyrelsen får inte samtidigt sitta med i Staff-lagets
 Mod-lag.
-§12 Digitala forum
+
+#### §12 Digitala forum
 Discord-servern ägs och förvaltas av Mod-laget och föreningen tillsammans. För att ändra
 Discord-serverns ägandeskap måste både Mod-laget och föreningsstyrelsen godkänna det.
 Discord-servern måste drivas på ett sätt som är i enlighet med dessa stadgar, och i förmån
 för föreningen.
+
 För att föreningen ska sluta vara verksamma på Discord-servern måste årsmötet godkänna
 det. För att upplösa Discord-servern måste både Mod-laget och årsmötet godkänna det.
 Minecraft-servern Trusted ägs och förvaltas av Mod-laget och föreningen tillsammans. För
